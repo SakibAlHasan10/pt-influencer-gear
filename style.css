@@ -7,6 +7,10 @@
 }
 
 /* shearing */
+main {
+    padding: 2rem 15rem;
+}
+
 :root {
     --primary-color: #3A3A3A;
     --button-color: #E02C6D;
@@ -29,15 +33,12 @@
     font-weight: 700;
 }
 
-.nav-bar ul{
-
-}
 
 .nav-bar li {
     list-style: none;
     display: inline-block;
     height: 2rem;
-    padding-left: 1.5rem;
+    padding-left: 1.4rem;
 }
 
 .nav-1 {
@@ -46,6 +47,11 @@
     height: 2rem;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.nav-1:active,
+.nav-1:hover {
+    background: #eeecec;
 }
 
 .nav-icon {
@@ -61,9 +67,11 @@
     padding-top: 3rem;
     width: 100%;
 }
-.banner-content{
+
+.banner-content {
     width: 70%;
 }
+
 .banner-title {
     color: var(--primary-color);
     font-family: Poppins;
@@ -77,7 +85,8 @@
     color: var(--primary-color);
     font-size: 1rem;
     width: 30rem;
-    margin: 1rem 0rem;
+    margin: 1.5rem 0rem;
+    line-height: 2rem;
     font-weight: 600;
 }
 
@@ -101,9 +110,110 @@
     background-size: 450px 410px;
     background-position: center;
     width: 40%;
-    
+
 }
-.main-camera{
+
+.main-camera {
     width: 25.6rem;
     height: 25rem;
+}
+
+/* sponsors-container */
+
+.sponsors-container {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    border-top: 2px solid rgba(182, 178, 178, 0.125);
+    border-bottom: 2px solid rgba(182, 178, 178, 0.125);
+}
+
+.sponsors {
+    padding: 2rem 0px;
+}
+
+
+/* responsive for small device */
+
+@media screen and (max-width:576px) {
+
+    .header,
+    main {
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .nav-container,
+    .nav-bar,
+    .banner-content,
+    .banner-description {
+        width: 90%;
+    }
+
+    .nav-container,
+    .nav-bar,
+    .banner-content,
+    .banner-description {
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .nav-bar,
+    .banner-content {
+        margin-top: 1.5rem;
+    }
+
+    .nav-bar li {
+        padding-left: 1rem;
+    }
+
+    .web-name {
+        font-size: 1.2rem;
+
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-photo {
+        background-size: 83vw 55vh;
+        width: 95%;
+        height: 60vh;
+        margin: 10px auto;
+    }
+
+    .main-camera {
+        width: 58vw;
+        height: 45vh;
+        display: flex;
+        margin: 3rem auto;
+    }
+
+    .banner-content {
+        height: 50vh;
+    }
+
+    .sponsors-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .sponsors {
+        padding: 0px 1rem;
+    }
+
+
+}
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    .header {
+        margin: 3rem 2.5rem;
+    }
 }
