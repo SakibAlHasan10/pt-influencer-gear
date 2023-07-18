@@ -7,6 +7,10 @@
 }
 
 /* shearing */
+:root {
+    --primary-color: #3A3A3A;
+    --button-color: #E02C6D;
+}
 
 /* header section */
 .header {
@@ -20,23 +24,25 @@
 }
 
 .web-name {
-    color: #3A3A3A;
+    color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+.nav-bar ul{
 
+}
 
 .nav-bar li {
     list-style: none;
     display: inline-block;
     height: 2rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .nav-1 {
     text-decoration: none;
-    color: #3A3A3A;
+    color: var(--primary-color);
     height: 2rem;
     font-size: 1rem;
     font-weight: 600;
@@ -45,4 +51,59 @@
 .nav-icon {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+/* banner section start */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    width: 100%;
+}
+.banner-content{
+    width: 70%;
+}
+.banner-title {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.banner-description {
+    color: var(--primary-color);
+    font-size: 1rem;
+    width: 30rem;
+    margin: 1rem 0rem;
+    font-weight: 600;
+}
+
+.primary-button {
+    background-color: var(--button-color);
+    display: inline-flex;
+    align-items: flex-start;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    padding: .4rem 1.2rem;
+    width: 12.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+.banner-photo {
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: 450px 410px;
+    background-position: center;
+    width: 40%;
+    
+}
+.main-camera{
+    width: 25.6rem;
+    height: 25rem;
 }
